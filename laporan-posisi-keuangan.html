@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Posisi Keuangan (Neraca)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        .financial-report {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        
+        .header h2 {
+            margin: 5px 0 0;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        
+        .company-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 60px;
+        }
+        
+        .report-date {
+            text-align: right;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            font-style: italic;
+        }
+        
+        .balance-sheet {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0;
+        }
+        
+        .balance-sheet th {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .balance-sheet td {
+            padding: 10px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .balance-sheet tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+        
+        .balance-sheet tr:hover {
+            background-color: #f0f7ff;
+        }
+        
+        .main-total {
+            font-weight: bold;
+            background-color: #e3f2fd !important;
+        }
+        
+        .grand-total {
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #bbdefb !important;
+        }
+        
+        .assets {
+            width: 48%;
+            float: left;
+            margin-right: 2%;
+        }
+        
+        .liabilities-equity {
+            width: 48%;
+            float: left;
+        }
+        
+        .section-title {
+            background-color: #2c3e50;
+            color: white;
+            padding: 8px 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        
+        .notes {
+            clear: both;
+            padding: 20px;
+            background-color: #f5f5f5;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        
+        .signature-area {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        
+        .signature {
+            text-align: center;
+            width: 200px;
+        }
+        
+        .signature-line {
+            border-top: 1px solid #333;
+            margin: 50px auto 10px;
+            width: 80%;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: white;
+            font-size: 12px;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+            }
+            
+            .financial-report {
+                box-shadow: none;
+            }
+            
+            .header {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="financial-report">
+        <div class="header">
+            <h1>PT. CONTOH PERUSAHAAN MAJU</h1>
+            <h2>Laporan Posisi Keuangan (Neraca)</h2>
+        </div>
+        
+        <div class="report-date">
+            Per 31 Desember 2023 (dalam Rupiah)
+        </div>
+        
+        <div style="padding: 20px;">
+            <div class="assets">
+                <h3 class="section-title">ASET</h3>
+                <table class="balance-sheet">
+                    <tr>
+                        <th colspan="2">ASET LANCAR</th>
+                    </tr>
+                    <tr>
+                        <td>Kas dan setara kas</td>
+                        <td style="text-align: right;">5,250,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Piutang usaha</td>
+                        <td style="text-align: right;">3,780,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Persediaan</td>
+                        <td style="text-align: right;">2,450,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Aset lancar lainnya</td>
+                        <td style="text-align: right;">1,120,000,000</td>
+                    </tr>
+                    <tr class="main-total">
+                        <td>Total Aset Lancar</td>
+                        <td style="text-align: right;">12,600,000,000</td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="2">ASET TIDAK LANCAR</th>
+                    </tr>
+                    <tr>
+                        <td>Tanah</td>
+                        <td style="text-align: right;">8,000,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Bangunan</td>
+                        <td style="text-align: right;">12,500,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Akumulasi penyusutan bangunan</td>
+                        <td style="text-align: right;">(2,300,000,000)</td>
+                    </tr>
+                    <tr>
+                        <td>Peralatan</td>
+                        <td style="text-align: right;">5,750,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Akumulasi penyusutan peralatan</td>
+                        <td style="text-align: right;">(1,850,000,000)</td>
+                    </tr>
+                    <tr class="main-total">
+                        <td>Total Aset Tidak Lancar</td>
+                        <td style="text-align: right;">22,100,000,000</td>
+                    </tr>
+                    
+                    <tr class="grand-total">
+                        <td>TOTAL ASET</td>
+                        <td style="text-align: right;">34,700,000,000</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="liabilities-equity">
+                <h3 class="section-title">KEWAJIBAN DAN EKUITAS</h3>
+                <table class="balance-sheet">
+                    <tr>
+                        <th colspan="2">KEWAJIBAN</th>
+                    </tr>
+                    <tr>
+                        <td>Utang usaha</td>
+                        <td style="text-align: right;">3,200,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Utang pajak</td>
+                        <td style="text-align: right;">1,150,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Utang jangka pendek lainnya</td>
+                        <td style="text-align: right;">2,450,000,000</td>
+                    </tr>
+                    <tr class="main-total">
+                        <td>Total Kewajiban Jangka Pendek</td>
+                        <td style="text-align: right;">6,800,000,000</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Utang jangka panjang</td>
+                        <td style="text-align: right;">8,500,000,000</td>
+                    </tr>
+                    <tr class="main-total">
+                        <td>Total Kewajiban</td>
+                        <td style="text-align: right;">15,300,000,000</td>
+                    </tr>
+                    
+                    <tr>
+                        <th colspan="2">EKUITAS</th>
+                    </tr>
+                    <tr>
+                        <td>Modal saham</td>
+                        <td style="text-align: right;">12,000,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Saldo laba</td>
+                        <td style="text-align: right;">7,400,000,000</td>
+                    </tr>
+                    <tr class="main-total">
+                        <td>Total Ekuitas</td>
+                        <td style="text-align: right;">19,400,000,000</td>
+                    </tr>
+                    
+                    <tr class="grand-total">
+                        <td>TOTAL KEWAJIBAN DAN EKUITAS</td>
+                        <td style="text-align: right;">34,700,000,000</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="notes">
+                <h3>Catatan atas Laporan Keuangan:</h3>
+                <p>1. Laporan keuangan ini disusun sesuai dengan Standar Akuntansi Keuangan (SAK) yang berlaku di Indonesia.</p>
+                <p>2. Nilai-nilai yang tercantum dalam laporan ini telah diaudit oleh Kantor Akuntan Publik Berizin.</p>
+                <p>3. Mata uang yang digunakan adalah Rupiah (Rp).</p>
+            </div>
+            
+            <div class="signature-area">
+                <div class="signature">
+                    <p>Direktur Utama</p>
+                    <div class="signature-line"></div>
+                    <p>Dr. John Doe, MBA</p>
+                </div>
+                <div class="signature">
+                    <p>Direktur Keuangan</p>
+                    <div class="signature-line"></div>
+                    <p>Jane Smith, S.E., Ak.</p>
+                </div>
+                <div class="signature">
+                    <p>Tanggal: 15 Januari 2024</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            Laporan ini dibuat secara elektronik dan tidak memerlukan tanda tangan basah
+        </div>
+    </div>
+</body>
+</html>

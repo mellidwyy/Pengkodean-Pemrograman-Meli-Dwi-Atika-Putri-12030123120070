@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN SSO UNDIP</title>
+    <style>
+        /* Styling untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Latar belakang dengan efek blur */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://undip.ac.id/wp-content/uploads/2024/07/xDJI_0219-1536x985.jpg.pagespeed.ic.4ACIAVQFrN.webp') no-repeat center center;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
+
+        /* Container utama */
+        .main-container {
+            background: white;
+            width: 400px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            z-index: 1;
+        }
+
+        /* Header */
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: contain; /* Memastikan logo tidak terdistorsi */
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;
+            margin: 10px 0;
+        }
+
+        .university {
+            font-size: 18px;
+            color: black;
+            margin: 5px 0;
+        }
+
+        .subheading {
+            font-size: 14px;
+            color: gray;
+            margin: 5px 0;
+        }
+
+        /* Form login */
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .input-wrapper {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .input-wrapper .icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+        }
+
+        .input-wrapper input {
+            width: 100%;
+            padding: 10px 10px 10px 40px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .login-button {
+            background: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        .reset-button {
+            background: #dc3545;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        /* Link tambahan */
+        .register-link, .alumni-link {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .register-link {
+            color: #dc3545;
+        }
+
+        .alumni-link {
+            color: #007bff;
+        }
+
+        /* Footer */
+        .footer p {
+            font-size: 12px;
+            color: gray;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <div class="header">
+            <img src="https://upload.wikimedia.org/wikipedia/id/9/9b/UNDIPOfficial.png" alt="Universitas Diponegoro Logo" class="logo">
+            <h1>Single Sign On (SSO)</h1>
+            <p class="university">Universitas Diponegoro</p>
+            <p class="subheading">Silakan Masuk</p>
+        </div>
+
+        <!-- Form Login -->
+        <div class="login-form">
+            <form>
+                <div class="input-wrapper">
+                    <img src="https://img.icons8.com/ios-filled/50/000000/user.png" alt="Ikon Pengguna" class="icon">
+                    <input type="text" placeholder="NIM/NIP/Username/e-mail official Undip">
+                </div>
+                <button type="submit" class="login-button">LOGIN</button>
+            </form>
+            <button class="reset-button">Reset Password</button>
+            <a href="#" class="register-link">Belum memiliki akun? Daftar sekarang!</a>
+            <a href="#" class="alumni-link">Pendaftaran alumni klik disini</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>© 2025 DSTI Universitas Diponegoro. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

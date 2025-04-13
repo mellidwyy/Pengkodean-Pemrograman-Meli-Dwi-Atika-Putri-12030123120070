@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Perubahan Modal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .financial-report {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #8e44ad;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .report-period {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .equity-statement {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .equity-statement th {
+            background-color: #8e44ad;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .equity-statement td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .sub-total {
+            font-weight: bold;
+            background-color: #f4ecf7;
+        }
+        
+        .grand-total {
+            font-weight: bold;
+            background-color: #d2b4de;
+            font-size: 1.1em;
+        }
+        
+        .negative {
+            color: #e74c3c;
+        }
+        
+        .positive {
+            color: #27ae60;
+        }
+        
+        .align-right {
+            text-align: right;
+        }
+        
+        .signature-area {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .signature {
+            width: 200px;
+            text-align: center;
+        }
+        
+        .signature-line {
+            border-top: 1px solid #333;
+            margin: 40px auto 10px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="financial-report">
+        <div class="header">
+            <h1>LAPORAN PERUBAHAN MODAL</h1>
+            <div class="report-period">Per 31 Desember 2023 (dalam Rupiah)</div>
+        </div>
+        
+        <table class="equity-statement">
+            <tr>
+                <th colspan="2">MODAL AWAL</th>
+            </tr>
+            <tr>
+                <td>Modal per 1 Januari 2023</td>
+                <td class="align-right">15,000,000,000</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">PENAMBAHAN MODAL</th>
+            </tr>
+            <tr>
+                <td>Setoran modal pemilik</td>
+                <td class="align-right">2,000,000,000</td>
+            </tr>
+            <tr>
+                <td>Laba ditahan tahun sebelumnya</td>
+                <td class="align-right">3,500,000,000</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Total Penambahan Modal</td>
+                <td class="align-right positive">5,500,000,000</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">PENGURANGAN MODAL</th>
+            </tr>
+            <tr>
+                <td>Prive pemilik</td>
+                <td class="align-right negative">(1,200,000,000)</td>
+            </tr>
+            <tr>
+                <td>Kerugian tahun berjalan</td>
+                <td class="align-right negative">(0)</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Total Pengurangan Modal</td>
+                <td class="align-right negative">(1,200,000,000)</td>
+            </tr>
+            
+            <tr class="grand-total">
+                <td>MODAL AKHIR</td>
+                <td class="align-right">19,300,000,000</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">DETAIL MODAL AKHIR</th>
+            </tr>
+            <tr>
+                <td>Modal saham</td>
+                <td class="align-right">17,000,000,000</td>
+            </tr>
+            <tr>
+                <td>Saldo laba</td>
+                <td class="align-right">2,300,000,000</td>
+            </tr>
+            <tr class="grand-total">
+                <td>TOTAL MODAL AKHIR</td>
+                <td class="align-right">19,300,000,000</td>
+            </tr>
+        </table>
+        
+        <div class="signature-area">
+            <div class="signature">
+                <div class="signature-line"></div>
+                <p>Direktur Utama</p>
+            </div>
+            <div class="signature">
+                <div class="signature-line"></div>
+                <p>Direktur Keuangan</p>
+            </div>
+            <div class="signature">
+                <p>Tanggal: 15 Januari 2024</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

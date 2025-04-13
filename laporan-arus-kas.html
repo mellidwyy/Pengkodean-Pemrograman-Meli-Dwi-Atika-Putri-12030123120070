@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Arus Kas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .financial-report {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #2980b9;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .report-period {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .cashflow-statement {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .cashflow-statement th {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .cashflow-statement td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .sub-total {
+            font-weight: bold;
+            background-color: #eaf2f8;
+        }
+        
+        .grand-total {
+            font-weight: bold;
+            background-color: #aed6f1;
+            font-size: 1.1em;
+        }
+        
+        .negative {
+            color: #e74c3c;
+        }
+        
+        .positive {
+            color: #27ae60;
+        }
+        
+        .align-right {
+            text-align: right;
+        }
+        
+        .indent {
+            padding-left: 20px;
+        }
+        
+        .signature-area {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .signature {
+            width: 200px;
+            text-align: center;
+        }
+        
+        .signature-line {
+            border-top: 1px solid #333;
+            margin: 40px auto 10px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="financial-report">
+        <div class="header">
+            <h1>LAPORAN ARUS KAS</h1>
+            <div class="report-period">Per 31 Desember 2023 (dalam Rupiah)</div>
+        </div>
+        
+        <table class="cashflow-statement">
+            <tr>
+                <th colspan="2">ARUS KAS DARI AKTIVITAS OPERASI</th>
+            </tr>
+            <tr>
+                <td>Laba bersih</td>
+                <td class="align-right positive">8,250,000,000</td>
+            </tr>
+            <tr>
+                <td class="indent">Penyusutan dan amortisasi</td>
+                <td class="align-right">1,500,000,000</td>
+            </tr>
+            <tr>
+                <td class="indent">Perubahan piutang usaha</td>
+                <td class="align-right negative">(750,000,000)</td>
+            </tr>
+            <tr>
+                <td class="indent">Perubahan persediaan</td>
+                <td class="align-right negative">(1,200,000,000)</td>
+            </tr>
+            <tr>
+                <td class="indent">Perubahan utang usaha</td>
+                <td class="align-right">900,000,000</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Kas bersih dari aktivitas operasi</td>
+                <td class="align-right positive">8,700,000,000</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">ARUS KAS DARI AKTIVITAS INVESTASI</th>
+            </tr>
+            <tr>
+                <td class="indent">Pembelian peralatan</td>
+                <td class="align-right negative">(3,500,000,000)</td>
+            </tr>
+            <tr>
+                <td class="indent">Penjualan aset tetap</td>
+                <td class="align-right">750,000,000</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Kas bersih dari aktivitas investasi</td>
+                <td class="align-right negative">(2,750,000,000)</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">ARUS KAS DARI AKTIVITAS PENDANAAN</th>
+            </tr>
+            <tr>
+                <td class="indent">Penerimaan pinjaman</td>
+                <td class="align-right">5,000,000,000</td>
+            </tr>
+            <tr>
+                <td class="indent">Pembayaran pinjaman</td>
+                <td class="align-right negative">(2,000,000,000)</td>
+            </tr>
+            <tr>
+                <td class="indent">Prive pemilik</td>
+                <td class="align-right negative">(1,200,000,000)</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Kas bersih dari aktivitas pendanaan</td>
+                <td class="align-right">1,800,000,000</td>
+            </tr>
+            
+            <tr class="grand-total">
+                <td>KENAIKAN BERSIH KAS</td>
+                <td class="align-right positive">7,750,000,000</td>
+            </tr>
+            
+            <tr>
+                <td>Saldo kas awal periode</td>
+                <td class="align-right">2,500,000,000</td>
+            </tr>
+            
+            <tr class="grand-total">
+                <td>SALDO KAS AKHIR PERIODE</td>
+                <td class="align-right">10,250,000,000</td>
+            </tr>
+        </table>
+        
+        <div class="signature-area">
+            <div class="signature">
+                <div class="signature-line"></div>
+                <p>Direktur Utama</p>
+            </div>
+            <div class="signature">
+                <div class="signature-line"></div>
+                <p>Direktur Keuangan</p>
+            </div>
+            <div class="signature">
+                <p>Tanggal: 15 Januari 2024</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

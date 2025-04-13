@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Laba Rugi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .financial-report {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .report-period {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        
+        .income-statement {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        .income-statement th {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .income-statement td {
+            padding: 8px 10px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .sub-total {
+            font-weight: bold;
+            background-color: #ecf0f1;
+        }
+        
+        .grand-total {
+            font-weight: bold;
+            background-color: #bdc3c7;
+            font-size: 1.1em;
+        }
+        
+        .negative {
+            color: #e74c3c;
+        }
+        
+        .positive {
+            color: #27ae60;
+        }
+        
+        .align-right {
+            text-align: right;
+        }
+        
+        .signature-area {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .signature {
+            width: 200px;
+            text-align: center;
+        }
+        
+        .signature-line {
+            border-top: 1px solid #333;
+            margin: 40px auto 10px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="financial-report">
+        <div class="header">
+            <h1>LAPORAN LABA RUGI</h1>
+            <div class="report-period">Per 31 Desember 2023 (dalam Rupiah)</div>
+        </div>
+        
+        <table class="income-statement">
+            <tr>
+                <th colspan="2">PENDAPATAN</th>
+            </tr>
+            <tr>
+                <td>Penjualan bersih</td>
+                <td class="align-right">45,800,000,000</td>
+            </tr>
+            <tr>
+                <td>Pendapatan jasa</td>
+                <td class="align-right">3,200,000,000</td>
+            </tr>
+            <tr>
+                <td>Pendapatan lain-lain</td>
+                <td class="align-right">1,500,000,000</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Total Pendapatan</td>
+                <td class="align-right">50,500,000,000</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">BEBAN POKOK PENJUALAN</th>
+            </tr>
+            <tr>
+                <td>Harga pokok penjualan</td>
+                <td class="align-right negative">(32,750,000,000)</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Laba Kotor</td>
+                <td class="align-right positive">17,750,000,000</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">BEBAN OPERASIONAL</th>
+            </tr>
+            <tr>
+                <td>Beban penjualan</td>
+                <td class="align-right negative">(2,800,000,000)</td>
+            </tr>
+            <tr>
+                <td>Beban administrasi</td>
+                <td class="align-right negative">(1,950,000,000)</td>
+            </tr>
+            <tr>
+                <td>Beban pemasaran</td>
+                <td class="align-right negative">(1,200,000,000)</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Total Beban Operasional</td>
+                <td class="align-right negative">(5,950,000,000)</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Laba Usaha</td>
+                <td class="align-right positive">11,800,000,000</td>
+            </tr>
+            
+            <tr>
+                <th colspan="2">PENDAPATAN/BEBAN LAIN-LAIN</th>
+            </tr>
+            <tr>
+                <td>Pendapatan bunga</td>
+                <td class="align-right">350,000,000</td>
+            </tr>
+            <tr>
+                <td>Beban bunga</td>
+                <td class="align-right negative">(1,200,000,000)</td>
+            </tr>
+            <tr class="sub-total">
+                <td>Total Pendapatan/Beban Lain-lain</td>
+                <td class="align-right negative">(850,000,000)</td>
+            </tr>
+            
+            <tr class="grand-total">
+                <td>LABA SEBELUM PAJAK</td>
+                <td class="align-right positive">10,950,000,000</td>
+            </tr>
+            
+            <tr>
+                <td>Beban pajak penghasilan</td>
+                <td class="align-right negative">(2,700,000,000)</td>
+            </tr>
+            
+            <tr class="grand-total">
+                <td>LABA BERSIH</td>
+                <td class="align-right positive">8,250,000,000</td>
+            </tr>
+        </table>
+        
+        <div class="signature-area">
+            <div class="signature">
+                <div class="signature-line"></div>
+                <p>Direktur Utama</p>
+            </div>
+            <div class="signature">
+                <div class="signature-line"></div>
+                <p>Direktur Keuangan</p>
+            </div>
+            <div class="signature">
+                <p>Tanggal: 15 Januari 2024</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
