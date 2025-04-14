@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Persediaan dan Penjualan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Gambar Tesla -->
+        <div class="image-container">
+            <img src="gambar/tesla.png" alt="Mobil Tesla">
+        </div>
+
+        <h1>📦 Manajemen Persediaan & Penjualan 🛒</h1>
+
+        <!-- Form Tambah Produk -->
+        <div class="form-container">
+            <h2>Tambah Produk</h2>
+            <input type="text" id="productName" placeholder="Nama Produk">
+            <input type="number" id="productStock" placeholder="Jumlah Stok">
+            <button class="btn tambah" onclick="addProduct()">➕ Tambah Produk</button>
+        </div>
+
+        <!-- Daftar Persediaan -->
+        <div class="inventory-container">
+            <h2>📋 Daftar Persediaan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Produk</th>
+                        <th>Stok</th>
+                        <th>Penjualan</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryList"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
